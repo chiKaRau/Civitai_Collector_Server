@@ -1,0 +1,1 @@
+{"version":2,"languages":{"nodejs-npm":{"specfileHash":"76806f3569c766939780e6d976559f5f","lockfileHash":"14722d86cff00a5f360e36945077d770","guessedImports":["@google-cloud/local-auth","googleapis","request","body-parser","cors","express","axios","archiver","morgan"],"guessedImportsHash":"2a5afc951824ade9fb01e6374b1e69d2"}}}

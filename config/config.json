@@ -1,0 +1,11 @@
+{
+    "env_db": {
+        "db_connection_string": "",
+        "db_name": "",
+        "collection_name": ""
+    },
+    "env_googlesheet": {
+        "SPREADSHEETS_ID": "your googlesheet api",
+        "APIKEY": "yout apikey"
+    }
+}
