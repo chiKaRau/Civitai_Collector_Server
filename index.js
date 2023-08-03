@@ -67,7 +67,7 @@ async function start() {
 
   try {
     //Open Connection for Admin and retriving the Config info
-    let { db_connection_urls, db_ports, db_names } = await call_admin_db_config()
+    //let { db_connection_urls, db_ports, db_names } = await call_admin_db_config()
 
     //Open Connection for civitai
     //Replace db_connection_urls[0].civitaiService with your mongodb connection url 
