@@ -23,7 +23,7 @@ To get started with Civitai Collector Server, follow these steps:
    - Copy your API Key and Spreadsheet ID and paste them into `/config/config.json`.
 
 2. **Setup MongoDB:**
-   - Install [MongoDB](https://www.mongodb.com/) and create a cluster, completing the security setup.
+   - Setup [MongoDB](https://www.mongodb.com/) and create a cluster, completing the security setup.
    - Go to the `CivitaiCollector_Server` folder, edit `index.js` Line 75, and replace `db_connection_urls[0].civitaiService` with your MongoDB connection URL and `db_names[0].civitaiService` with your MongoDB database name.
    - Uncomment index.js Line 77 (`//await civitai_controller.init_civitai_db_all_collections()`). This will create MongoDB Collections based on your Google Sheets tables. 
    - Run the following command:
