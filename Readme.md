@@ -25,12 +25,12 @@ To get started with Civitai Collector Server, follow these steps:
 2. **Setup MongoDB:**
    - Install [MongoDB](https://www.mongodb.com/) and create a cluster, completing the security setup.
    - Go to the `CivitaiCollector_Server` folder, edit `index.js` Line 75, and replace `db_connection_urls[0].civitaiService` with your MongoDB connection URL and `db_names[0].civitaiService` with your MongoDB database name.
+   - Uncomment index.js Line 77 (`//await civitai_controller.init_civitai_db_all_collections()`). This will create MongoDB Collections based on your Google Sheets tables. 
    - Run the following command:
      ```
      node index.js
      ```
-   - Uncomment index.js Line 77 (`//await civitai_controller.init_civitai_db_all_collections()`). This will create MongoDB Collections based on your Google Sheets tables. Remember to comment it out again after the collections are created.
-
+   - Remember to comment the index.js Line 77 out again after the collections are created.
 3. **Setup `folder_list.json`:**
    - At your saving model directory, run the following commands:
      ```
@@ -43,12 +43,13 @@ To get started with Civitai Collector Server, follow these steps:
      find . -type d > folder_list.txt
      ```
    - Place the `folder_list.txt` in the `CivitaiCollector_server` directory.
+   - The Civitai_Collector_Server will automatically generated a folder_list.json so you can use it at the Civitai_Collector_Client.
 
 ## Usage
 
 Civitai Collector Server performs the following functions:
 
-1. Download the model and zip it based on the folder path input so when you unzipping them, you don't need to spend time on organize them into corresponding folder.
+1. Download the model and zip it based on the folder path input so when you unzipping them, you don't need to spend time on organizing them into corresponding folder.
 2. Append, Update, Delete, and Query your model information from/in Google Sheets and MongoDB.
 
 ## License
