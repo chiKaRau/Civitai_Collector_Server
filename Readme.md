@@ -31,7 +31,7 @@ To get started with Civitai Collector Server, follow these steps:
      node index.js
      ```
    - Remember to comment the index.js Line 77 out again after the collections are created.
-3. **Setup `folder_list.json`:**
+3. **Setup `folder_list.json` for input autocomplete:**
    - At your saving model directory, run the following commands:
      ```
      mkdir "Drive Folder List"
